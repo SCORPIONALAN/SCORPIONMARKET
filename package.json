@@ -1,0 +1,14 @@
+{
+  "name": "scorpionmarket",
+  "version": "1.0.0",
+  "description": "SCORPIONMARKET es un mini proyecto que simula una tienda inteligente dentro de la FES Aragón, utilizando React en el frontend y Express en el backend. Integra la API de OpenAI para ofrecer respuestas automáticas a preguntas relacionadas con productos, precios, horarios y más. Además, mantiene una memoria de conversación por usuario, lo que permite una experiencia más natural y coherente.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "Alan Torres",
+  "license": "ISC"
+}

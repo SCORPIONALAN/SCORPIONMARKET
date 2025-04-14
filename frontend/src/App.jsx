@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 import { axiosInstance } from '../lib/axios.js';
+import logo from './assets/market.png';
 
 const userId = Date.now() + Math.floor(100 + Math.random() * 2000);
 
@@ -30,7 +31,7 @@ function App() {
       setChat((prev) => [...prev, { text: botrespuesta, role: 'bot' }]);
     } catch (error) {
       console.error(error);
-      setChat((prev) => [...prev, { text: "Error al conectar con el servidor 😓", role: 'bot' }]);
+      setChat((prev) => [...prev, { text: error.response.data.error, role: 'bot' }]);
     }
   };
 
@@ -48,7 +49,7 @@ function App() {
     <div className="min-h-screen flex flex-col items-center justify-start bg-[#1a1a1a] text-white">
       {/* Header */}
       <header className="flex justify-center items-center gap-5 mt-10 mb-10">
-        <img className="size-5 sm:size-10 md:size-30 lg:size-40" src="./src/assets/market.png" alt="Logo" />
+        <img className="size-5 sm:size-10 md:size-30 lg:size-40" src={logo} alt="Logo" />
         <h1 className="sm:text-3xl md:text-5xl lg:text-6xl font-bold text-amber-500">SCORPIONTIENDA</h1>
       </header>
 
