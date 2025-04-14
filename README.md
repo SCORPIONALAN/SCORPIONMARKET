@@ -90,3 +90,14 @@ La interfaz de usuario de **SCORPIONMARKET** está desarrollada con **React**. S
 - Se renderizan mensajes a izquierda o derecha dependiendo si el remitente es el bot o el usuario.
 - Las peticiones al backend se hacen al endpoint `/pedir`, enviando el mensaje y la ID de usuario.
 - Se manejan errores de conexión con mensajes visuales amigables.
+
+
+## 🏪 SCORPIONMARKET Desplegado en render
+Cuando abres con el link de render, debes de esperar algo de tiempo antes de que la aplicacion se inicie.
+https://scorpionmarket.onrender.com/
+
+
+![alt text](./images/scorpionMarket.png)
+
+Recuerda que tienes un maximo de 3 entradas por dia, despues de eso ya no te dejara hacer mas consultas, eso por cuestiones economicas de que cada token me cuesta
+![alt text](./images/scorpionTiendaLimite.png)
